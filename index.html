@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display-container">
+            <input type="text" disabled id="display-history" class="display-txt" value="">
+            <input type="text" disabled id="display-calc" class="display-txt" value="">
+            <input type="text" disabled id="display-equal" class="display-txt" value="=">
+        </div>
+        <div class="box-bottons">
+            <button class="btn-ce" onclick="clearDisplay()">CE</button>
+            <button class="material-symbols-outlined" onclick="backSpace()">backspace</button>
+            <button class="btn-divided" onclick="insertToDisplay('/')">÷</button>
+            <button class="btn-multiplied material-symbols-outlined" onclick="insertToDisplay('*')">close</button>
+            <button onclick="insertToDisplay('7')">7</button>
+            <button onclick="insertToDisplay('8')">8</button>
+            <button onclick="insertToDisplay('9')">9</button>
+            <button class="btn-minus material-symbols-outlined" onclick="insertToDisplay('-')">remove</button>
+            <button onclick="insertToDisplay('4')">4</button>
+            <button onclick="insertToDisplay('5')">5</button>
+            <button onclick="insertToDisplay('6')">6</button>
+            <button class="btn-plus material-symbols-outlined" onclick="insertToDisplay('+')">add</button>
+            <button onclick="insertToDisplay('1')">1</button>
+            <button onclick="insertToDisplay('2')">2</button>
+            <button onclick="insertToDisplay('3')">3</button>
+            <button class="btn-zero" onclick="insertToDisplay('0')">0</button>
+            <button onclick="insertToDisplay('.')">.</button>
+            <button class="btn-equal material-symbols-outlined"
+                onclick="result(), insertToDisplayHistory()">equal</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
